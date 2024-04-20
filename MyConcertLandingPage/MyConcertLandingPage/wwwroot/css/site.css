@@ -1,0 +1,61 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-image:url("../images/Background_Image.jpg");
+  height:max-content;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar-brand{
+    font-size: 32px;
+}
+
+.container-fluid {
+    padding-left: 50px;
+    background-color: #F7F3E6;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color:red;
+}
+
+
+.container {
+    font-size: 16px;
+    background-color: #E2EAF4;
+    border-radius: 40px;
+    box-sizing: border-box;
+    text-align: left;
+    display: block;
+    color: blanchedalmond;
+    font-family: serif;
+    font-weight: 800;
+    margin-top:50px;
+    width: 500px;
+    padding-bottom: 30px;
+}
+
+.lol {
+    font-size: 54px;
+    color: red;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 0px;
+}
