@@ -1,0 +1,74 @@
+﻿@model TempratureConverter.Models.TempratreUnits
+
+@{
+    ViewData["Title"] = "Temperature Converter";
+}
+
+<div class="container">
+    <h1 class="text-center">@ViewData["Title"]</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form asp-action="Convert" method="post">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="unit1">Select Unit 1:</label>
+                        <select class="form-control" id="unit1" asp-for="unit1">
+                            <option value="true">Celsius</option>
+                            <option value="false">Fahrenheit</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="unit2">Select Unit 2:</label>
+                        <select class="form-control" id="unit2" asp-for="unit2">
+                            <option value="true">Celsius</option>
+                            <option value="false">Fahrenheit</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="unit1ValueF">Enter temprature to Convert:</label>
+                        <input type="text" class="form-control" id="unit1ValueF" name="unit1ValueF">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <button type="submit" class="btn btn-primary mt-4">Convert</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @if (Model.unit2ValueF != 0)
+    {
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="result">
+                    <h2 class="text-center">Converted Value:</h2>
+                    <p class="text-center">@Model.unit2ValueF</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    /* Custom styles */
+    .result {
+        background-color: #f7f7f7;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+
+    .container{
+        border-radius: 20px;
+        background-color: #E2EAF4;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .h1{
+        text-align: center;
+        padding-top: 30px;
+    }
+</style>
