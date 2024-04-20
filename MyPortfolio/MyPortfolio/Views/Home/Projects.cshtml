@@ -1,0 +1,76 @@
+﻿<!-- Projects.cshtml -->
+@{
+    ViewBag.Title = "Projects";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <style>
+        /* Custom CSS for Projects section */
+        #projects {
+            padding-top: 20px;
+            background-color: #E2EAF4;
+        }
+
+        #projects h2 {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .card {
+            margin-bottom: 100px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-text {
+            color: #666;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <hr />
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="~/images/project1.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Shankara Restaurant</h5>
+                        <p class="card-text">This project is about finding recipes of different kinds of dishes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="~/images/project2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">ChatApp</h5>
+                        <p class="card-text">This is a chat app project. We can signup, login, and chat. And without logging in, we can see chats only.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

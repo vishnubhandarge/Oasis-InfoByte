@@ -1,0 +1,55 @@
+﻿<!-- Contact.cshtml -->
+@{
+    ViewBag.Title = "Contact Me";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <style>
+        /* Custom CSS for Contact section */
+        #contact {
+            padding: 50px 0;
+        }
+
+        #contact h2 {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .contact-info {
+            background-color: #E2EAF4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="contact-info">
+                    <p>Email: john.doe@example.com</p>
+                    <p>Phone: +1234567890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

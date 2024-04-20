@@ -1,0 +1,59 @@
+﻿<!-- About.cshtml -->
+@{
+    ViewBag.Title = "About Me";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <style>
+        /* Custom CSS for About section */
+        #about {
+            padding: 50px 0;
+            background-color: #E2EAF4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #about h2 {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .about-content {
+            margin-top: 30px;
+        }
+
+        .about-content p {
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .about-content p:first-of-type {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/images/profile.jpg" alt="John Doe" class="img-fluid" />
+            </div>
+            <div class="col-md-6 about-content">
+                <p>As an intern at TECHPLEMENT, I develop robust and secure cross-platform software, using C# and .NET Core technologies. I have contributed to several projects, such as creating an ASP.NET API for a customer relationship management system and building a .NET MVC web application for a health care provider. I have also learned how to use Microsoft Azure to deploy and manage cloud-based solutions.</p>
+                <p>I am a third-year student of Computer Science Engineering at Aditya Engineering College, where I have acquired a solid foundation in programming, data structures, algorithms, and software engineering principles. I am passionate about learning new skills and technologies, and I am eager to apply them to real-world problems. My goal is to become a full-stack developer who can create innovative and scalable software products.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

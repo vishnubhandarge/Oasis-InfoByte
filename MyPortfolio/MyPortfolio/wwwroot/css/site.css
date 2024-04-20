@@ -1,0 +1,56 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: rgb(231, 221, 255, 0.1);
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+
+}
+
+.navbar-brand {
+    color: #7026B6;
+    font-size: 28px;
+    padding-left: 38px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container-fluid {
+    padding-left: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav-item {
+    color: #7026B6;
+    font-size: 22px;
+}
+
+.navbar-collapse collapse d-sm-inline-flex justify-content-between {
+    padding-right: 12px;
+    padding-left: 20px;
+}

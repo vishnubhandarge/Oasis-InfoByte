@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        /* CSS styles */
+        .container {
+            padding-top: 20px;
+            max-width: 960px; /* Adjust container width as needed */
+            margin: 0 auto; /* Center the container */
+            overflow: hidden; /* Clear float */
+        }
+
+        .header-content {
+            overflow: hidden; /* Clear float */
+        }
+
+        .header-content h1 {
+            font-size: 36px;
+            color: red; /* Make h1 red */
+            font-weight: bold; /* Make h1 bold */
+            padding-bottom: 40px;
+        }
+
+        .header-content p {
+            color: blue; /* Make p blue */
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.8;
+            float: left; /* Float the paragraph to the left */
+            width: calc(100% - 200px); /* Set width of paragraph to 100% minus width of image */
+            margin-right: 20px; /* Add some space between paragraph and image */
+        }
+
+        .header-content img {
+            float: right; /* Float the image to the right */
+            width: 200px; /* Set width of image */
+        }
+
+        footer {
+            color: blue; /* Make footer content blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Hello!</h1>
+                <p>I'm Vishnu Bhandarge .NET developer <br/> and computer science student.<br/>
+                    I hope you like my portfolio site. <br/> Made using .NET MVC 8, HTML & CSS</p>
+                <img src="~/images/index_image.jpg" alt="Image" /> <!-- Replace "path_to_your_image.jpg" with the actual path to your image -->
+            </div>
+        </header>
+    </div>
+</body>
+</html>
